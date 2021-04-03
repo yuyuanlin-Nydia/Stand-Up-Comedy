@@ -1,0 +1,278 @@
+@media screen and (min-width: 300px) {
+    /* 共用CSS */
+     :root {
+        --mcolor1: #ff6347;
+        --mcolor2: rgb(5, 137, 123);
+        --mcolor3: rgb(2, 46, 81);
+        --mcolor4: #e7e5e5;
+        --mcolor5: white;
+    }
+    body {
+        font-family: 'Noto Sans TC' !important;
+    }
+    a,
+    a:link,
+    a:active,
+    a:hover,
+    a:visited,
+    ul {
+        text-decoration: none !important;
+        margin-top: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+    p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    input,
+    select {
+        border: 0;
+        outline: none;
+        background-color: rgba(0, 0, 0, 0);
+        border: 1px solid lightgrey;
+        border-radius: 5px;
+        padding: 5px 10px;
+    }
+    input:focus,
+    select:focus {
+        border: 3px solid lightblue;
+    }
+    img#pictop {
+        /* 回到頂部的圖片 */
+        display: none;
+        width: 100px;
+        object-fit: cover;
+        position: fixed;
+        top: 420px;
+        right: 20px;
+        z-index: 2;
+    }
+    .fixnavbar {
+        position: fixed;
+        top: 0%;
+        width: 100%;
+        z-index: 200;
+        background-color: var(--mcolor5);
+        color: black;
+        height: 80px;
+        box-shadow: 5px 5px 10px gray;
+    }
+    .fixnavbar a {
+        color: black;
+    }
+    .mynavbar>ul>a {
+        color: var(--mcolor5);
+    }
+    .mynavbar>ul>a:hover {
+        color: var(--mcolor4);
+    }
+    .fixnavbar>ul>a>li::after,
+    .mynavbar>ul>a>li::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: var(--mcolor4);
+        transition: width .5s;
+    }
+    .fixnavbar li:hover::after,
+    .mynavbar>ul>a>li:hover::after {
+        width: 100%;
+    }
+    #bigpic+h2 {
+        /* 大圖上面的文字:EX知名演員 */
+        width: 100%;
+        text-align: center;
+        color: var(--mcolor5);
+        position: absolute;
+        top: 30%;
+    }
+    .title {
+        /* 頁面中下方文字h3的標題 */
+        width: 130px;
+        margin: 20px auto;
+        text-align: center;
+    }
+    .title::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 3px;
+        background: var(--mcolor1);
+        transition: width .3s;
+    }
+    .title:hover::after {
+        width: 100%;
+    }
+    button::after {
+        border: none;
+    }
+    .btnA {
+        /* 橘底白字按鈕 */
+        outline: 0px solid white;
+        padding: 5px 20px;
+        border: 1px solid var(--mcolor1);
+        background-color: var(--mcolor1);
+        color: var(--mcolor5);
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+    .btnA:hover {
+        padding: 5px 20px;
+        background-color: var(--mcolor5);
+        border: 1px solid var(--mcolor1);
+        border-radius: 5px;
+        margin-top: 20px;
+        color: var(--mcolor1);
+        cursor: pointer;
+    }
+    .btnB {
+        /* 白底橘字按鈕 */
+        padding: 5px 20px;
+        background-color: var(--mcolor5);
+        border: 1px solid var(--mcolor1);
+        border-radius: 5px;
+        margin-top: 20px;
+        color: var(--mcolor1);
+    }
+    .btnB:hover {
+        outline: 0px solid white;
+        padding: 5px 20px;
+        background-color: var(--mcolor1);
+        border: 1px solid var(--mcolor1);
+        color: var(--mcolor5);
+        margin-top: 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    i {
+        cursor: pointer;
+    }
+    footer {
+        background-color: var(--mcolor1);
+        text-align: center;
+        font-size: 14px;
+        padding: 10px 0px;
+        width: 100%;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    /* 手機裝置 */
+    .mynavbar>ul {
+        /* LOGO置中 */
+        background-color: rgba(0, 0, 0, 0.4);
+        text-align: center;
+        width: 100vw;
+    }
+    .mynavbar>ul>a>li {
+        display: inline-block;
+    }
+    #logo {
+        width: 50px;
+    }
+    .xshide {
+        display: none;
+    }
+    #menubar {
+        position: relative;
+        left: 20%;
+    }
+    li#menubar>a {
+        /* 選單ICON字顏色 */
+        color: var(--mcolor5);
+    }
+    li#menubar>a:hover {
+        /* 選單ICON HOVER */
+        color: black;
+        background-color: var(--mcolor5);
+    }
+    #smbox {
+        padding-top: 50px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    /* 中型以上螢幕裝置 */
+    .module_login {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.5);
+        background-color: white;
+    }
+    .module_login>div {
+        border: 5px solid var(--mcolor1);
+        padding: 50px;
+        background-color: var(--mcolor5);
+        height: 400px;
+        width: 800px;
+    }
+    .module_login>div {
+        /* 讓會員登入兩欄並排 */
+        display: flex;
+        align-self: center;
+    }
+    .module_login>div>div i {
+        /* 會員登入右上角的X */
+        padding: 5px;
+        border: 0px solid var(--mcolor1);
+    }
+    .module_login>div>div i:hover {
+        /* 會員登入右上角的Xㄥ */
+        border: 1px solid var(--mcolor1);
+        padding: 5px;
+        color: var(--mcolor1);
+        border-radius: 5px;
+    }
+    .module_login>div>div {
+        /* 兩欄的間隔 */
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    .module_login>div>div:first-of-type {
+        border-right: 1px solid lightgray;
+    }
+    .module_login>div>div>h6 {
+        /* 帳號密碼樣式 */
+        padding: 5px;
+    }
+    .module_login>div>div>h6>span {
+        /* 帳號密碼英文樣式 */
+        color: rgb(143, 142, 142);
+    }
+    .blank_p {
+        color: red;
+    }
+    .xlhide {
+        display: none !important;
+    }
+    .mynavbar {
+        background-color: rgba(0, 0, 0, 0.4);
+        height: 80px;
+        position: absolute;
+        top: 0%;
+        width: 100%;
+        z-index: 200;
+    }
+    img#logo {
+        height: 70px;
+    }
+    .fixnavbar>ul:nth-of-type(1)>a,
+    .mynavbar>ul:nth-of-type(1)>a {
+        display: inline-block;
+        margin: 0px 5px;
+    }
+    .fixnavbar>ul:nth-of-type(2),
+    .mynavbar>ul:nth-of-type(2) {
+        /* 中間導覽列 */
+        position: absolute;
+        top: 10%;
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+    }
+    
+}

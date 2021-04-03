@@ -1,0 +1,57 @@
+/* 為了讓頁面比較少資訊時，頁尾不會跑上來 */
+body{
+    min-height:100vh;
+}
+.content {
+    min-height: calc(100vh - 160px);
+}
+
+#downsection {
+    margin-top: 100px;
+}
+
+#member_form {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 100px;
+    line-height: 20px;
+    margin-bottom: 50px;
+}
+
+.member_regulation {
+    padding: 20px;
+    height: 200px;
+    overflow: auto;
+    border: lightgrey 1px solid;
+}
+
+p>label {
+    width: 10%;
+}
+
+
+/* 設定輸入欄位長度和對齊 */
+
+.input1 {
+    width: 50%;
+}
+
+.input2 {
+    width: 24.5%;
+}
+
+.input3 {
+    width: 16.5%;
+}
+
+#addresstext {
+    /* 地址空白那一欄 */
+    margin-left: 10%;
+    margin-top: 1%;
+}
+
+.span_red {
+    /* 必填顯示紅字 */
+    color: red;
+}
+

@@ -1,0 +1,105 @@
+.content {
+    min-height: calc(100vh - 190px);
+}
+
+#downsection {
+    margin-top: 150px;
+}
+
+#bigpic>img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+}
+
+#picbox>img {
+    /* 圖片下方的小框 */
+    width: 100px;
+    height: 120px;
+    border: 1px solid var(--mcolor4);
+    border-radius: 10px;
+}
+
+.num_i {
+    /* 數量加減的btn */
+    margin: 0 5px;
+    padding: 10px;
+}
+
+.num_i:hover {
+    background-color: var(--mcolor4);
+    padding: 10px;
+}
+
+#rightsection>div:nth-of-type(2)>div:nth-of-type(2)>div {
+    border-bottom: 1px var(--mcolor4) solid;
+}
+
+.updown_btn_rotate {
+    /* 送貨方式旁的ICON */
+    transform: rotate(180deg);
+}
+
+#rightsection>div>div>ul {
+    /* 送貨方式下 */
+    list-style: disc;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+#cart_div {
+    width: 350px;
+    text-align: center;
+    border: 2px solid var(--mcolor4);
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 15%;
+    right: 3%;
+    z-index: 100;
+    background-color: white;
+}
+
+.form_title {
+    vertical-align: top;
+}
+
+.status {
+    display: none;
+}
+.star_container input,
+.show_star input{
+    display:none;
+}
+.star_container label{
+    color:grey;
+    float:right;
+    position:relative;
+    left:-80%;
+    font-size:24px;
+    margin:0 5px;
+
+}
+
+.star_container input:not(:checked) ~ label:hover,
+.star_container input:not(:checked) ~ label:hover ~label {
+    color:#fd4
+}
+
+.star_container input:checked ~ label{
+    color:#fd4
+}
+
+textarea{
+    border:1px solid gray;
+    padding:5px;
+    margin:0 100px;
+    font-size:20px;
+}
+

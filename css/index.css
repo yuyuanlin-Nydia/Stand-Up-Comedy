@@ -1,0 +1,221 @@
+@media screen and (min-width: 300px) {
+    /* 共用CSS */
+    p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    #slideshow img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit: cover;
+        animation-name: myslide;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+        opacity: 0;
+    }
+    #slideshow>img:nth-child(2) {
+        animation-delay: 5s;
+    }
+    #slideshow>img:nth-child(3) {
+        animation-delay: 10s;
+    }
+    @keyframes myslide {
+        /* 輪播動畫 */
+        10% {
+            opacity: 1
+        }
+        20% {
+            opacity: 1;
+        }
+        30% {
+            opacity: 0;
+        }
+        40% {
+            transform: scale(1.1);
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    /* 手機裝置 */
+    #slideshow {
+        /* 輪播的div */
+        width: 100%;
+        max-height: 300px;
+        object-position: center;
+        overflow: hidden;
+        position: absolute;
+        top: 0%;
+        z-index: -100;
+    }
+    #slogan {
+        width: 400px;
+        position: absolute;
+        top: 180px;
+        z-index: 10;
+        padding-top: 60px;
+        padding-bottom: 20px;
+        width: 100%;
+        text-align: center;
+        background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    }
+    div#downsection {
+        margin-top: 350px;
+    }
+    div#section2A>div>img {
+        height: 300px;
+        /* width: 100%; */
+    }
+    .heading>h4 {
+        /* 各大區塊標題樣式 */
+        /* EX.ACTOR */
+        font-size: 20px;
+        color: var(--mcolor2);
+        font-weight: 1000;
+        padding: 5px;
+    }
+    .heading>h2 {
+        /* EX一窺演員的經歷 */
+        font-size: 14px;
+    }
+    p.xlhide>a {
+        /*ViewMore */
+        color: var(--mcolor2);
+        font-weight: 1000;
+    }
+    .picicon {
+        z-index: 100;
+        padding: 10px;
+    }
+    #iconleft {
+        /* 演員那欄往左往右的ICON */
+        position: absolute;
+        left: 3%;
+        top: 100%;
+    }
+    #iconright {
+        /* 演員那欄往左往右的ICON */
+        position: absolute;
+        right: 3%;
+        top: 100%;
+    }
+    .container>p>a {
+        /* VIEW MORE的樣式 */
+        background-color: var(--mcolor2);
+        border-radius: 30px;
+        color: white;
+        padding: 5px;
+    }
+    #section2A>div,
+    #section3A>div,
+    #section4A>div {
+        width: 400px;
+    }
+    #section2A>div>img,
+    #section3A>div>img,
+    #section4A>div>img {
+        width: 400px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    /* 中型以上螢幕裝置 */
+    #slideshow {
+        /* 輪播的div */
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: absolute;
+        top: 0%;
+        z-index: -100;
+    }
+    #slogan {
+        /* 返笑喜劇俱樂部 陪|你|走|過|人|生|的|笑|與|淚區塊 */
+        background-color: rgba(255, 255, 255, 0.8);
+        width: 400px;
+        -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+        box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+        position: absolute;
+        top: 75%;
+        left: 100px;
+        z-index: -1;
+        padding: 10px;
+    }
+    #subtitle {
+        font-size: 20px;
+    }
+    div#downsection {
+        position: absolute;
+        width: 100%;
+        margin: 0 auto;
+        top: 98%;
+    }
+    .heading>h4,
+    .heading>p:nth-of-type(2)>a {
+        /* 各大區塊標題樣式 */
+        color: var(--mcolor2);
+        font-weight: 1000;
+        transition-property: border-radius;
+        transition-duration: 0.5s;
+    }
+    .heading>p:nth-of-type(2)>a:hover {
+        /* View More的樣式 */
+        color: white;
+        background-color: var(--mcolor2);
+        border-radius: 30px;
+        padding:7px;
+    }
+    .img2A {
+        width: 250px;
+    }
+    .img2B {
+        height: 350px;
+        width: 430px;
+        object-fit: cover;
+    }
+    #section2A {
+        margin-top: -3%;
+    }
+    .grayarea {
+        background-color: var(--mcolor4);
+    }
+    a.ticket {
+        /* 購票去的樣式 */
+        width: 130px;
+        text-align: center;
+        font-size: 16px;
+        padding: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        position: absolute;
+        top: 20%;
+        left: 30%;
+        display: none;
+        background-color: var(--mcolor1);
+    }
+    .smdiv:hover>a.ticket {
+        /* 滑入圖片購票去的樣式設定  */
+        display: block;
+        color: white;
+        background-color: var(--mcolor1);
+    }
+    .smdiv:hover>img {
+        /* 滑到圖片上半透明 */
+        opacity: 0.5;
+    }
+    .img4A {
+        width: 260px;
+    }
+    #section4A>div>a>img:hover {
+        opacity: 0.8;
+        -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+        box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    }
+    #section4A a,
+    #section4A a:hover {
+        /* 連結改字的顏色 */
+        color: black;
+    }
+}

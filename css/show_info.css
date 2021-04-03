@@ -1,0 +1,53 @@
+/* 為了讓頁面比較少資訊時，頁尾不會跑上來 */
+
+.content {
+    min-height: calc(100vh - 140px);
+}
+
+.downsection {
+    margin-top: 120px;
+}
+
+td {
+    padding: 20px 0px;
+}
+
+tr>td:nth-of-type(3) {
+    /* 票價 */
+    color: darkred;
+}
+
+tr>td:nth-of-type(4)>a {
+    /* 購票 */
+    background-color: var(--mcolor2);
+    color: var(--mcolor5);
+    padding: 10px;
+}
+
+.tab_link {
+    font-weight: 500;
+    color: rgb(110, 109, 109);
+}
+
+.active,
+.tab_link:hover {
+    border-bottom: 3px solid var(--mcolor2);
+    font-weight: 500;
+    color: black;
+}
+
+.blue-words {
+    color: var(--mcolor3);
+}
+
+.tab_content {
+    line-height: 2;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}

@@ -1,0 +1,21 @@
+.content {
+    min-height: calc(100vh - 140px);
+}
+
+.downsection {
+    margin-top: 100px;
+}
+
+.p_img {
+    width: 80px;
+    height: 100px;
+}
+
+tr>td {
+    vertical-align: middle
+}
+
+.price {
+    color: palevioletred;
+    font-size: 30px;
+}

@@ -1,0 +1,133 @@
+.downsection {
+    margin-top: 80px;
+}
+
+.num {
+    font-size: 22px;
+    color: var(--mcolor2);
+}
+
+#seat_space {
+    /* 限定寬度  不能用flex，要不然座位會跑掉 */
+    width: 700px;
+}
+.seat_status_sold {
+    width: 50px;
+    height:30px;
+    background-color:red;
+    display:inline-block;
+}
+.seat_status_chosen {
+    width: 50px;
+    height:30px;
+    background-color:gray;
+    display:inline-block;
+}
+div.sold{
+    background-color:red;
+}
+
+#mydiv {
+    width: 670px;
+    margin: 0 auto;
+}
+
+
+#sectionA {
+    background-color: lightpink;
+}
+
+#sectionB {
+    background-color: lightskyblue;
+}
+
+#sectionC {
+    background-color: lightsalmon;
+}
+
+#seat_space {
+    padding: 20px;
+}
+
+#stage {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: burlywood;
+}
+
+.sectionA,
+.sectionB,
+.sectionC {
+    border: 1px lightgray solid;
+    width: 35px;
+    display: inline-block;
+    font-size: smaller;
+    text-align: center;
+    cursor: pointer;
+    margin: 1px 1px 3px 1px;
+}
+
+.sectionA {
+    background-color: lightpink;
+}
+
+.sectionB {
+    background-color: lightskyblue;
+}
+
+.sectionC {
+    background-color: lightsalmon;
+}
+
+.downsection>div>div>table {
+    width: 100%;
+    line-height: 40px;
+    text-align: center;
+}
+
+.selected_seat {
+    background-color: gray;
+    color: white;
+}
+
+.steps>div>p:first-of-type {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    color: white;
+    background-color: grey;
+}
+
+.current_step {
+    background-color: var(--mcolor2) !important;
+    color: white;
+}
+
+.downsection>div:first-of-type {
+    background-color: rgb(36, 84, 126);
+    color: white;
+}
+
+#checkout>div>label {
+    width: 10%;
+    line-height: 50px;
+}
+
+#finished>div {
+    padding: 20px 100px;
+    border: 1px solid var(--mcolor4);
+    box-shadow: 5px 5px 10px;
+    width: 60%;
+}
+
+#mydiv>div>div {
+    border: 1px solid white;
+}
+
+.link {
+    /* 前往結帳的按鈕 */
+    cursor: pointer;
+}

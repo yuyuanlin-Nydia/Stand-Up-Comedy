@@ -1,0 +1,90 @@
+/* 為了讓頁面比較少資訊時，頁尾不會跑上來 */
+
+.content {
+    min-height: calc(100vh - 140px);
+}
+
+#downsection {
+    margin-top: 100px;
+}
+
+#left_sec {
+    line-height: 30px;
+    padding: 10px;
+}
+
+#product_sec>div:hover {
+    background-color: var(--mcolor1);
+}
+
+.p_img {
+    /* 產品照片 */
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+#product_sec>div>a {
+    color: black;
+}
+
+#product_sec>div>a>div {
+    position: relative;
+}
+
+.cart_btn {
+    /* 購物車ICON DIV */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* position: absolute;
+    bottom: 0px; */
+    text-align: center;
+    padding: 5px 0px;
+    width: 100%;
+}
+
+
+/* #product_sec>div>a>div>a>div>i */
+
+.cart_btn>i {
+    /* 購物車ICON */
+    color: white;
+}
+
+#cart_div {
+    width: 350px;
+    text-align: center;
+    border: 2px solid var(--mcolor4);
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 15%;
+    right: 3%;
+    z-index: 100;
+    background-color: white;
+}
+
+#cart_div>div>img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+#cart_div>a>div {
+    padding: 5px;
+    background-color: var(--mcolor5);
+    border: 1px solid var(--mcolor1);
+    border-radius: 5px;
+    margin-top: 10px;
+    color: var(--mcolor1);
+    width: 40%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.show {
+    visibility: visible;
+}
