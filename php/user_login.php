@@ -16,11 +16,11 @@ if (isset($_POST["login_btn"])) {
         if ($_POST["account"] == $row["account"] and $_POST["pwd"] == $row["password"]) {
             //如果我想秀出名字，COOKIE無法存取中文字，待解決~
             setcookie("userName", $_POST["account"]);
-            if (isset($_COOKIE["lastPage"])) {
-                header(sprintf("Location: %s", $_COOKIE["lastPage"]));
-            } else {
+            // if (isset($_COOKIE["lastPage"])) {
+            //     header(sprintf("Location: %s", $_COOKIE["lastPage"]));
+            // } else {
                 header("location: index1.php");
-            }
+            // }
         }
 
     }

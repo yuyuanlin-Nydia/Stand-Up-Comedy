@@ -63,7 +63,7 @@ if (isset($_POST["checkout"])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>知名演員__返笑喜劇俱樂部</title>
-    <link rel="stylesheet" href="../css/actor.css">
+    <link rel="stylesheet" href="../css/cart_main.css">
     <link rel="stylesheet" href="../css/0_mutual.css">
     <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
     <script src="../js/bootstrap/jquery.min.js"></script>
@@ -138,8 +138,8 @@ if (isset($_POST["checkout"])){
     </div>
     <!-- 回到頂端的麥克風圖片 -->
     <a class="xshide" href="#bigpic"><img id="pictop" src="../img/mutual/top.png" alt=""></a>
-    
-        <div class="container d-flex " id="downsection">
+    <div class="content">
+        <div class="container d-flex downsection" >
             <div class="col-8 mx-2 ">
                  <div class="bg-white my-3 p-4 rounded">
                     <h2>配送資訊</h2>

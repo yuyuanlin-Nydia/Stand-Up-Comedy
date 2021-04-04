@@ -72,7 +72,7 @@ $result = mysqli_query($link, $commandText);
             <?php } ?>   
            
         </ul>
-        <ul class=" align-self-start navlinks d-flex justify-content-center ">
+        <ul class=" align-self-start navlinks d-flex justify-content-center" id="myNavbar">
             <a class="navitem xshide" href="index1.php">
                 <li  class="m-3"><i class="fa fa-home" aria-hidden="true" style="font-size: 28px;"></i>首頁</li>
             </a>
@@ -107,7 +107,7 @@ $result = mysqli_query($link, $commandText);
         </ul>
     </div>
     <!-- 回到頂端的麥克風圖片 -->
-    <a class="xshide" href="#bigpic"><img id="pictop" src="../img/mutual/top.png" alt=""></a>
+    <a class="xshide" href="#"><img id="pictop" src="../img/mutual/top.png" alt=""></a>
     
     <!-- 輪播動畫 -->
     <div id="slideshow">

@@ -31,7 +31,7 @@ if (isset($_POST["deleteBtn"])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>知名演員__返笑喜劇俱樂部</title>
-    <link rel="stylesheet" href="../css/actor.css">
+    <link rel="stylesheet" href="../css/cart_main.css">
     <link rel="stylesheet" href="../css/0_mutual.css">
     <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
     <script src="../js/bootstrap/jquery.min.js"></script>
@@ -110,7 +110,7 @@ if (isset($_POST["deleteBtn"])){
         <div id="cart_div" class="hide">
             <div id="cart_ref"></div>
         </div>
-        <div class="container downsection">
+        <div class="container downsection content">
         <h1 class="text-center mb-3">購物車商品</h1> 
         <?php if($amount==0){
             echo "<h5 class='text-center my-5 text-muted'> 您的購物車目前尚未選購商品! </h5>";
@@ -144,7 +144,7 @@ if (isset($_POST["deleteBtn"])){
                //  var_dump($result);
                // <input name="cart" value="shop" type="hidden">
                echo "<tr>
-                        <td><a href='deleteProduct.php?sy={$k}'>刪除</a></td>
+                        <td><a href='cart_deleteOne.php?sy={$k}'>刪除</a></td>
                         <td><img class='p_img' src='../img/product/{$row["src"]}'> 
                             {$row["productName"]}<input name='p_name' value='{$v[0]}' type='hidden'></td>
                         <td>{$row["price"]}</td>
@@ -156,14 +156,14 @@ if (isset($_POST["deleteBtn"])){
                $sum = $sum +$v[1]*$row["price"];
             }
  
-            echo "    </tbody>      
+            echo "</tbody>      
                     </table>
                     <hr>
                     <h3 class='col-12 text-right'>總計:<span class='price'>NT$ $sum 元 </span></h3><input name='any' type='hidden' value='5'>
                         <p class='col-12 text-right'>數量:<span class='price'> $amount </span>件</h3>
                     <div class='text-right'>
-                        <a class='btnA mx-2' style='width:250px;padding:10px' name='deleteBtn' href='deletecart.php' >清除購物車 </a>
-                        <a class='btnA mx-2' style='width:250px;padding:10px' name='checkoutBtn' href='12-1_checkout.php?amount= $amount &sum= $sum '><input name='tot'  type='hidden' value='abc'>結帳 </a>
+                        <a class='btnA mx-2' style='width:250px;padding:10px' name='deleteBtn' href='cart_deleteAll.php' >清除購物車 </a>
+                        <a class='btnA mx-2' style='width:250px;padding:10px' name='checkoutBtn' href='cart_checkout.php?amount= $amount &sum= $sum '><input name='tot'  type='hidden' value='abc'>結帳 </a>
                         <p class='my-3'>下一步:確認收件方式與付款資訊 </p>
                     </div>
                 </div>

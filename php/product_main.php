@@ -162,7 +162,7 @@ foreach($arr as $k=>$v){
         <div id="cart_div" class="hide">
             <div id="cart_ref"></div>
         </div>
-        <form method="post" action="">
+        <form method="post"  class="content" action="">
             <div id="downsection" class="d-flex justify-content-center">
                 <div class="col-lg-2 col-md-0 " id="left_sec">
                     <div class="mb-3">

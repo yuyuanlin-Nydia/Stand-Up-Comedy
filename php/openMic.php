@@ -174,7 +174,7 @@ foreach($arr as $k=>$v){
     <footer class="myfooter ">Copyright 2020 返笑喜劇俱樂部 | All Rights Reserved | Designed by Nydia Lin
     </footer>
 
-    <script src="0_mutual.js"></script>
+    <script src="../js/0_mutual.js"></script>
 
 </body>
 
