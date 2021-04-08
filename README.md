@@ -1,37 +1,16 @@
-## Welcome to GitHub Pages
+## 返笑喜劇俱樂部_脫口秀售票和購物車平台
+**前端:原生Javascript 後端:PHP** 
 
-You can use the [editor on GitHub](https://github.com/yuyuanlin-Nydia/Stand-Up-Comedy/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+![Image](https://imgur.com/d1Pq1wk)
 
-### Markdown
+# 主要功能
+**-登入/登出**<br> 
+**-周邊商品購物車**<br> 
+**-售票系統**<br> 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## 使用工具
+**前端:HTML/CSS/JAVASCRIPT** <br> 
+**後端:PHP** <br> 
+**資料庫:MYSQL** <br> 
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/yuyuanlin-Nydia/Stand-Up-Comedy/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
