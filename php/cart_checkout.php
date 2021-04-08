@@ -52,7 +52,7 @@ if (isset($_POST["checkout"])){
         command; 
         $result = mysqli_query($link, $sql3); 
         unset($_SESSION["gwc"]);
-        header("location:index1.php");
+        header("location:index.php");
     }
 }
 
@@ -103,13 +103,13 @@ if (isset($_POST["checkout"])){
            
         </ul>
         <ul class=" align-self-start navlinks d-flex justify-content-center ">
-            <a class="navitem xshide" href="index1.php">
+            <a class="navitem xshide" href="index.php">
                 <li  class="m-3"><i class="fa fa-home" aria-hidden="true" style="font-size: 28px;"></i>首頁</li>
             </a>
             <a class="navitem xshide" href="actor.php">
                 <li class="m-3"><i class="fa fa-user" aria-hidden="true" style="font-size: 28px;"></i>知名演員</li>
             </a>
-            <a href="index1.php">
+            <a href="index.php">
                 <img class="img-fluid" id="logo" src="../img/mutual/logo.png" alt="">
             </a>
 
@@ -128,7 +128,7 @@ if (isset($_POST["checkout"])){
                     <i class="fa fa-bars  ml-auto" aria-hidden="true" style="font-size: 24px;"></i>
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="index1.php">首頁</a>
+                    <a class="dropdown-item" href="index.php">首頁</a>
                     <a class="dropdown-item" href="actor.php">知名演員</a>
                     <a class="dropdown-item" href="openMic.php">OpenMic空間</a>
                     <a class="dropdown-item" href="show_main.php">表演資訊</a>

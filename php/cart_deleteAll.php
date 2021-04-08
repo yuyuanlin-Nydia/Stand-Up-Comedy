@@ -24,7 +24,7 @@ unset($_SESSION["gwc"]);
 <body>
     <script>
         alert("您的購物車已清空!");
-        window.location.href="index1.php";
+        window.location.href="index.php";
     </script>
 
 </body>

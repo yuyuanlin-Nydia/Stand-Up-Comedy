@@ -24,7 +24,7 @@ if (isset($_POST["checkoutBtn2"])) {
     // UPDATE seat SET vacancy = 'N' WHERE seatID in('3排01','3排02')
     $result = mysqli_query($link, $sql);
     echo '<script>alert("感謝您透過返笑喜劇俱樂部訂票!");
-        location.href="index1.php"</script>';
+        location.href="index.php"</script>';
 } else {
     //上一頁沒選擇座位時
     //會需要放在else裡是因為因為表單post給自己 $seat會是空
@@ -93,13 +93,13 @@ if (isset($_POST["checkoutBtn2"])) {
 
         </ul>
         <ul class=" align-self-start navlinks d-flex justify-content-center ">
-            <a class="navitem xshide" href="index1.php">
+            <a class="navitem xshide" href="index.php">
                 <li  class="m-3"><i class="fa fa-home" aria-hidden="true" style="font-size: 28px;"></i>首頁</li>
             </a>
             <a class="navitem xshide" href="actor.php">
                 <li class="m-3"><i class="fa fa-user" aria-hidden="true" style="font-size: 28px;"></i>知名演員</li>
             </a>
-            <a href="index1.php">
+            <a href="index.php">
                 <img class="img-fluid" id="logo" src="../img/mutual/logo.png" alt="">
             </a>
 
@@ -118,7 +118,7 @@ if (isset($_POST["checkoutBtn2"])) {
                     <i class="fa fa-bars  ml-auto" aria-hidden="true" style="font-size: 24px;"></i>
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="index1.php">首頁</a>
+                    <a class="dropdown-item" href="index.php">首頁</a>
                     <a class="dropdown-item" href="actor.php">知名演員</a>
                     <a class="dropdown-item" href="openMic.php">OpenMic空間</a>
                     <a class="dropdown-item" href="show_main.php">表演資訊</a>
@@ -230,7 +230,7 @@ if (isset($_POST["checkoutBtn2"])) {
         deleteBtn.onclick=function(){
             var answer=confirm("確定取消購票嗎?");
             if(answer){
-                window.location.href="index1.php";
+                window.location.href="index.php";
             }
         }
 
