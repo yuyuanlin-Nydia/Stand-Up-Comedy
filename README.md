@@ -3,6 +3,7 @@
 嗨~我是Nydia!<br>
 由於喜愛脫口秀，所以創造這個網站，<br>
 希望可以讓更多人了解脫口秀的相關資訊，也可以透過網站訂票，並購買演員的周邊商品!
+[youTube操作](https://www.youtube.com/watch?v=AoGF_kED_M4)
 
 ![Imgur](https://i.imgur.com/d1Pq1wk.png)
 
